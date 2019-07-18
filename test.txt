@@ -1,0 +1,11 @@
+Packages to learn for processing images in python
+1. Scikit Image
+2. Numpy
+3. Scipy
+4. PIL/Pillow
+5. open CV- Python
+6. Simple CBV
+7. Mahotas
+8. SImple ITK
+9. Pgmagick
+10. PyCairo
