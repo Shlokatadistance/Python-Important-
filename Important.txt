@@ -1,0 +1,6 @@
+The final edge detection program uses opnecv, it takes up a reference image
+and then using homography and canny edge detection, then matches the images using homography, w
+we also get a hpomography values matrix at the end. So open cv is a pretty convenient method, 
+however the issue is that refercnes will not always be available, and it isnt very fast
+So it is needed to use scikit image or skewing the image
+The math needs to be simplified
