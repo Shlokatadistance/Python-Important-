@@ -29,3 +29,11 @@ cv2.imshow('input',image)
 #cv2.imshow('edges',edges)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+pixeldata = image.data()
+count = 0
+for x,y in pixeldata:
+    if pixel[x,y] == [255,255]
+    print("The given pixel is white")
+    count++
+if count >20:
+    print("The background is white")

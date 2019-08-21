@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import imutils
   
-FILE_NAME = 'reference.jpg'
+FILE_NAME = 'reference1.jpg'
 try: 
     # Read image from disk. 
     img = cv2.imread(FILE_NAME)
@@ -16,3 +16,4 @@ try:
     cv2.imshow('detected',edges)
 except IOError: 
     print ('Error while reading files !!!') 
+

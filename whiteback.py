@@ -4,10 +4,10 @@ import cv2
 from skimage.filters import threshold_local
 import imutils
 import glob
-imge = cv2.imread('reference4.jpg',0)
+imge = cv2.imread('reference1.jpg',0)
 ratio = imge.shape[0]/500.0
 imge= imutils.resize(imge,height = 500)
-threshold = cv.threshold(image,75,150,cv2.THRESH_BINARY_INV)
+#threshold = cv2.threshold(imge,75,200,cv2.THRESH_BINARY)
 #equ = cv2.equalizeHist(image)
 #res = np.hstack((image,equ))
 
@@ -49,6 +49,7 @@ cv2.destroyAllWindows()
 #check what kind of background you are getting
 #use threshing
 #edges = cv2.Canny(image,75,200)
+"""
 def auto_canny(image,sigma = 0.33):
     v = np.median(image)
     lower = int(max(0,(1.0 - sigma)*v))
@@ -63,5 +64,16 @@ edges = cv2.Canny(imge,10,225)
 cv2.imshow('edged',imge)
 cv2.waitKey()
 cv2.destroyAllWindows()
-
-
+"""
+"""
+def auto_canny(image,sigma = 0.33):
+    v = np.median(image)
+    lower = int(max(0,(1.0 - sigma) *v))
+    higher = int(min(255,(1.0 + sigma)*v))
+    edged = cv2.Canny(image,lower,higher)
+    return edged
+x = cv2.Canny(imge,75,200)
+cv2.imshow('edged',x)
+""""
+pixel = pixdata[0, 0]
+if item[0] == 255 and item[1] == 255 and item[2] == 255:

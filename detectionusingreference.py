@@ -54,7 +54,7 @@ def alignImages(im1, im2):
 if __name__ == '__main__':
    
   # Read reference image
-  refFilename = "reference.jpg"
+  refFilename = "reference1.jpg"
   print("Reading reference image : ", refFilename)
   imReference = cv2.imread(refFilename, cv2.IMREAD_COLOR)
  
